@@ -161,39 +161,28 @@
     </section>
 
     <!-- ==================== 3. OUR PRODUCT ==================== -->
-    <section id="product" class="max-w-6xl mx-auto px-6 py-16 md:py-28 border-t border-brand-border/60 fade-in-section">
-      <!-- Section Title -->
-      <div class="text-center mb-12 md:mb-20">
-        <span class="text-xs md:text-sm font-medium tracking-widest uppercase text-brand-muted block mb-3">
-          PORTFOLIO
-        </span>
-        <h3 class="text-2xl md:text-3xl font-semibold tracking-luxury uppercase text-brand-dark">
-          OUR PRODUCT
-        </h3>
-      </div>
-
-      <!-- 2-Column Grid (왼쪽: 세럼 사진 / 오른쪽: 제품명과 소개 문구) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center max-w-5xl mx-auto">
+    <section id="product" class="max-w-5xl mx-auto px-6 py-16 md:py-24 border-t border-brand-border/60 fade-in-section">
+      <!-- 2-Column Grid (왼쪽: 세럼 투명 누끼 사진 / 오른쪽: 제품명과 소개 문구) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
         
-        <!-- Left: Product Image (배경 박스 없이 순수 제품 사진만 자연스럽게 배치) -->
+        <!-- Left: Product Image (배경이 투명한 고화질 단품 컷) -->
         <div class="flex justify-center items-center img-zoom-container">
           <img 
-            src="assets/images/product-serum-8p.jpg" 
-            alt="샤로로앙 위스퍼링 하이드레이션 세럼 연출 컷" 
-            class="max-h-[460px] md:max-h-[520px] w-auto object-contain img-zoom rounded-sm"
+            src="assets/images/product-serum-8p.png" 
+            alt="샤로로앙 위스퍼링 하이드레이션 세럼" 
+            class="max-h-[440px] md:max-h-[500px] w-auto object-contain img-zoom drop-shadow-sm"
           >
         </div>
 
         <!-- Right: Product Information -->
         <div class="flex flex-col justify-center text-center md:text-left space-y-6 md:space-y-8 md:pl-4">
           <div>
-            <span class="text-xs font-medium tracking-widest text-brand-lightmuted uppercase block mb-2">
-              Signature Serum · 50mL / 1.69 fl. oz.
+            <span class="text-xs font-semibold tracking-luxury uppercase text-brand-muted block mb-3">
+              OUR PRODUCT
             </span>
-            <h4 class="text-2xl md:text-3xl font-semibold text-brand-dark tracking-tight">
+            <h3 class="text-2xl md:text-4xl font-semibold text-brand-dark tracking-tight">
               Whispering Hydration Serum
-            </h4>
-            <p class="text-sm font-medium text-brand-muted mt-1">위스퍼링 하이드레이션 세럼</p>
+            </h3>
           </div>
 
           <!-- Highlight Copy -->
@@ -207,31 +196,11 @@
           <!-- Description -->
           <p class="text-brand-muted text-sm md:text-base leading-relaxed font-normal">
             PDRN과 5중 히알루론산, 세라마이드 NP를 담아<br class="hidden sm:inline">
-            피부에 수분을 공급하고 편안한 보습 케어를 선사합니다.
+            피부에 수분을 공급하고 편안한 보습 및 장벽 케어를 선사합니다.
           </p>
 
-          <!-- Key Formula Features -->
-          <div class="grid grid-cols-2 gap-3 pt-2 text-xs text-brand-charcoal font-normal text-left">
-            <div class="p-3 bg-brand-sand/60 rounded-sm border border-brand-border/30">
-              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase font-medium">Active Key</span>
-              <span class="font-semibold text-brand-dark">PDRN 1,000ppm</span>
-            </div>
-            <div class="p-3 bg-brand-sand/60 rounded-sm border border-brand-border/30">
-              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase font-medium">Moisture Barrier</span>
-              <span class="font-semibold text-brand-dark">5종 히알루론산 + 세라마이드</span>
-            </div>
-            <div class="p-3 bg-brand-sand/60 rounded-sm border border-brand-border/30">
-              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase font-medium">Pure Formula</span>
-              <span class="font-semibold text-brand-dark">100% 무향료 · 비자극</span>
-            </div>
-            <div class="p-3 bg-brand-sand/60 rounded-sm border border-brand-border/30">
-              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase font-medium">Skin Type</span>
-              <span class="font-semibold text-brand-dark">모든 피부 · 민감성 적합</span>
-            </div>
-          </div>
-
           <!-- CTA Button (DISCOVER MORE) -->
-          <div class="pt-4">
+          <div class="pt-2">
             <button 
               type="button" 
               onclick="openProductModal()"
@@ -387,11 +356,11 @@
 
       <!-- Modal Content -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-2">
-        <div class="rounded-sm flex justify-center items-center">
+        <div class="rounded-sm flex justify-center items-center p-4">
           <img 
-            src="assets/images/product-serum-8p.jpg" 
+            src="assets/images/product-serum-8p.png" 
             alt="샤로로앙 세럼 상세 이미지" 
-            class="max-h-[360px] w-auto object-contain rounded-sm"
+            class="max-h-[380px] w-auto object-contain drop-shadow-sm"
           >
         </div>
 
