@@ -55,15 +55,24 @@
   </script>
 
   <style>
-    * {
-      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif !important;
-    }
-
     body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
       background-color: #FCFCFA;
       color: #1C1C1A;
       overflow-x: hidden;
       word-break: keep-all;
+    }
+
+    /* Maru Buri font for emotional brand slogan */
+    @font-face {
+      font-family: 'MaruBuri';
+      src: url('https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-display: swap;
+    }
+
+    .font-maruburi {
+      font-family: 'MaruBuri', serif !important;
     }
 
     /* Subtle luxury smooth reveal */
@@ -247,16 +256,13 @@
 
     <!-- ==================== 5. CAMPAIGN BANNER ==================== -->
     <section class="w-full bg-brand-sand py-20 md:py-32 border-t border-b border-brand-border/50 text-center fade-in-section">
-      <div class="max-w-2xl mx-auto px-6 space-y-6">
-        <span class="text-xs tracking-widest text-brand-muted uppercase block font-medium">
-          DAILY SKIN RITUAL
-        </span>
-        <blockquote class="text-2xl md:text-3xl font-medium text-brand-dark leading-relaxed">
-          “피부가 숨을 쉬듯 편안해지는 순간,<br>샤로로앙이 함께합니다.”
-        </blockquote>
-        <p class="text-xs md:text-sm text-brand-muted font-normal tracking-wide">
-          Whispering Hydration Serum with Pure PDRN
+      <div class="max-w-2xl mx-auto px-6 space-y-4">
+        <p class="text-xs md:text-sm tracking-luxury text-brand-muted uppercase font-medium">
+          Light as the wind, deep as a whisper.
         </p>
+        <h3 class="font-maruburi text-2xl md:text-3xl font-normal text-brand-dark leading-relaxed">
+          가볍게 스며들어, 깊이 머무르다.
+        </h3>
       </div>
     </section>
 
