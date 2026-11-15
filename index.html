@@ -96,11 +96,15 @@
 <body class="selection:bg-brand-dark selection:text-white antialiased">
 
   <!-- ==================== HEADER (GNB) ==================== -->
-  <header id="header" class="w-full bg-[#FCFCFA]/90 backdrop-blur-md sticky top-0 z-40 transition-all duration-300 border-b border-brand-border/60">
-    <div class="max-w-6xl mx-auto px-6 py-6 md:py-8 flex flex-col items-center justify-center text-center">
-      <!-- Logo -->
-      <a href="#" class="font-serif text-2xl md:text-3xl tracking-widest text-brand-dark hover:opacity-80 transition-opacity">
-        SHAROROANE
+  <header id="header" class="w-full bg-[#FCFCFA]/95 backdrop-blur-md sticky top-0 z-40 transition-all duration-300 border-b border-brand-border/60">
+    <div class="max-w-6xl mx-auto px-6 py-5 md:py-7 flex flex-col items-center justify-center text-center">
+      <!-- Official Logo Image -->
+      <a href="#home" class="inline-block hover:opacity-85 transition-opacity py-1">
+        <img 
+          src="assets/images/Logo.png" 
+          alt="SHAROROANE 샤로로앙 로고" 
+          class="h-6 sm:h-7 md:h-8 w-auto object-contain"
+        >
       </a>
       
       <!-- Nav Links -->
@@ -115,13 +119,13 @@
 
   <main id="home">
     
-    <!-- ==================== 1. HERO SECTION ==================== -->
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 md:pt-10 pb-16 md:pb-24">
-      <div class="w-full overflow-hidden rounded-sm bg-brand-sand/40 border border-brand-border/40 shadow-sm">
+    <!-- ==================== 1. HERO SECTION (FULL-WIDTH WIDE BANNER) ==================== -->
+    <section class="w-full overflow-hidden bg-brand-sand/30 border-b border-brand-border/50">
+      <div class="w-full max-w-[2000px] mx-auto">
         <img 
           src="assets/images/hero-package.jpg" 
           alt="샤로로앙 위스퍼링 하이드레이션 세럼 패키지" 
-          class="w-full h-auto object-cover object-center max-h-[750px] mx-auto transition-transform duration-1000 hover:scale-[1.01]"
+          class="w-full h-auto object-cover object-center max-h-[85vh] min-h-[380px] sm:min-h-[500px] mx-auto transition-transform duration-1000 hover:scale-[1.01]"
         >
       </div>
     </section>
@@ -307,15 +311,21 @@
 
   </main>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer id="contact" class="max-w-6xl mx-auto px-6 py-16 md:py-24 text-center md:text-left text-xs text-brand-muted border-t border-brand-border/40">
+  <!-- ==================== FOOTER (DEEPONDE STYLE EXACT LAYOUT) ==================== -->
+  <footer id="contact" class="max-w-6xl mx-auto px-6 py-16 md:py-24 text-left text-xs text-brand-muted border-t border-brand-border/40">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 mb-12">
-      <!-- Col 1: Brand Info -->
-      <div class="md:col-span-2 space-y-3">
-        <span class="font-serif text-xl tracking-widest text-brand-dark block">SHAROROANE</span>
+      <!-- Col 1: Brand Info & Official Logo -->
+      <div class="md:col-span-2 space-y-4">
+        <a href="#home" class="inline-block hover:opacity-85 transition-opacity">
+          <img 
+            src="assets/images/Logo.png" 
+            alt="SHAROROANE 로고" 
+            class="h-5 md:h-6 w-auto object-contain"
+          >
+        </a>
         <p class="text-brand-muted font-light leading-relaxed max-w-sm">
           불필요한 것은 덜어내고, 피부에 필요한 것만 남깁니다.<br>
-          무향료 미니멀 스킨케어 브랜드 샤로로앙.
+          무향료 미니멀 스킨케어 브랜드 샤로로앙 (SHAROROANE).
         </p>
       </div>
 
@@ -329,21 +339,39 @@
         </ul>
       </div>
 
-      <!-- Col 3: Contact & Info -->
+      <!-- Col 3: Customer Service Hours -->
       <div class="space-y-2">
         <span class="text-brand-dark font-medium tracking-wider uppercase block mb-3">Customer Service</span>
         <p class="font-light leading-relaxed">
-          Email: <a href="mailto:guigui@mondeflow.com" class="hover:text-brand-dark underline decoration-brand-border">guigui@mondeflow.com</a><br>
-          운영시간: 평일 10:00 - 17:00<br>
-          점심시간: 12:00 - 13:00<br>
-          (토·일요일 및 공휴일 휴무)
+          Tel. <a href="tel:070-8144-5844" class="hover:text-brand-dark">070-8144-5844</a><br>
+          Email. <a href="mailto:guigui@mondeflow.com" class="hover:text-brand-dark underline decoration-brand-border">guigui@mondeflow.com</a><br>
+          CS Hours. 평일 10:00 - 17:00<br>
+          (Lunch. 12:00 - 13:00 / Weekend & Holiday Off)
         </p>
       </div>
     </div>
 
+    <!-- Deeponde Exact Corporate & FTC Information Area -->
+    <div class="pt-8 border-t border-brand-border/40 space-y-2 text-[11px] leading-relaxed text-brand-muted font-light">
+      <div>Company. <span class="text-brand-charcoal font-normal">몽드플로 (Mondeflow)</span> &nbsp;|&nbsp; CEO. <span class="text-brand-charcoal font-normal">윤우섭</span></div>
+      <div>Business Registration No. <span class="text-brand-charcoal font-normal">164-24-01987</span></div>
+      <div>
+        E-commerce Permit Registration No. <span class="text-brand-charcoal font-normal">2026-충북청주-2450</span> 
+        <a 
+          href="#none" 
+          onclick="window.open('https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1642401987', 'bizCommPop', 'width=750, height=950, scrollbars=yes'); return false;" 
+          class="underline hover:text-brand-dark text-brand-charcoal font-normal ml-1"
+        >
+          [사업자정보확인]
+        </a>
+      </div>
+      <div>Address. 충청북도 청주시 흥덕구 오송읍 봉산2길 16, 702-81</div>
+      <div>Tel. 070-8144-5844 &nbsp;|&nbsp; Email. <a href="mailto:guigui@mondeflow.com" class="hover:text-brand-dark">guigui@mondeflow.com</a></div>
+    </div>
+
     <!-- Copyright -->
-    <div class="pt-8 border-t border-brand-border/40 flex flex-col md:flex-row justify-between items-center text-brand-lightmuted font-light text-[11px] space-y-3 md:space-y-0">
-      <p>© 2026 SHAROROANE. All rights reserved.</p>
+    <div class="pt-6 mt-4 flex flex-col md:flex-row justify-between items-center text-brand-lightmuted font-light text-[11px] space-y-3 md:space-y-0">
+      <p>© 2026 몽드플로 (SHAROROANE). All rights reserved.</p>
       <div class="space-x-4">
         <a href="https://www.instagram.com" target="_blank" rel="noopener" class="hover:text-brand-dark transition-colors">Instagram</a>
         <a href="https://sharoroane.com" class="hover:text-brand-dark transition-colors">sharoroane.com</a>
