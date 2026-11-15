@@ -15,10 +15,7 @@
   <meta property="og:url" content="https://sharoroane.com/">
   <meta property="og:image" content="https://sharoroane.com/assets/images/hero-package.jpg">
 
-  <!-- Google Fonts: Cormorant Garamond & Pretendard -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Noto+Serif+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Pretendard Official CDN (한글/영문 전면 통합 상업용 무료 웹폰트) -->
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
   <!-- Tailwind CSS CDN -->
@@ -28,8 +25,8 @@
       theme: {
         extend: {
           fontFamily: {
-            serif: ['"Cormorant Garamond"', '"Noto Serif KR"', 'serif'],
-            sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+            sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+            serif: ['Pretendard', 'sans-serif'], // 세리프 클래스도 모두 프리텐다드로 완전 통합
           },
           colors: {
             brand: {
@@ -46,8 +43,11 @@
           },
           letterSpacing: {
             tightest: '-.03em',
-            luxury: '.25em',
-            widest: '.35em',
+            tight: '-.01em',
+            normal: '0',
+            wide: '.05em',
+            luxury: '.18em',
+            widest: '.28em',
           }
         }
       }
@@ -55,10 +55,13 @@
   </script>
 
   <style>
+    * {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif !important;
+    }
+
     body {
       background-color: #FCFCFA;
       color: #1C1C1A;
-      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
       overflow-x: hidden;
       word-break: keep-all;
     }
@@ -108,7 +111,7 @@
       </a>
       
       <!-- Nav Links -->
-      <nav class="mt-4 md:mt-5 flex items-center space-x-6 md:space-x-12 text-xs md:text-sm tracking-luxury uppercase text-brand-charcoal font-light">
+      <nav class="mt-4 md:mt-5 flex items-center space-x-6 md:space-x-12 text-xs md:text-sm tracking-luxury uppercase text-brand-charcoal font-medium">
         <a href="#home" class="hover:text-brand-muted transition-colors py-1">HOME</a>
         <a href="#philosophy" class="hover:text-brand-muted transition-colors py-1">OUR STORY</a>
         <a href="#product" class="hover:text-brand-muted transition-colors py-1">PRODUCTS</a>
@@ -133,19 +136,19 @@
     <!-- ==================== 2. OUR PHILOSOPHY ==================== -->
     <section id="philosophy" class="max-w-3xl mx-auto px-6 py-16 md:py-28 text-center fade-in-section">
       <!-- Subtitle -->
-      <span class="text-xs md:text-sm font-light tracking-widest uppercase text-brand-muted block mb-6">
+      <span class="text-xs md:text-sm font-medium tracking-widest uppercase text-brand-muted block mb-6">
         OUR PHILOSOPHY
       </span>
 
       <!-- Main Title -->
-      <h2 class="text-2xl md:text-4xl font-serif font-medium leading-relaxed md:leading-snug text-brand-dark mb-8 md:mb-10">
+      <h2 class="text-2xl md:text-4xl font-semibold leading-relaxed md:leading-snug text-brand-dark mb-8 md:mb-10 tracking-tight">
         불필요한 것은 덜어내고,<br class="hidden sm:inline">
         피부에 필요한 것만 남깁니다.
       </h2>
 
       <!-- Description Body (회색 글씨) -->
-      <div class="text-brand-muted text-sm md:text-base leading-relaxed md:leading-loose font-light space-y-4 max-w-xl mx-auto">
-        <p class="font-normal text-brand-charcoal/90">
+      <div class="text-brand-muted text-sm md:text-base leading-relaxed md:leading-loose font-normal space-y-4 max-w-xl mx-auto">
+        <p class="font-medium text-brand-charcoal/90">
           샤로로앙은 피부에 필요한 성분에 집중합니다.
         </p>
         <p>
@@ -163,10 +166,10 @@
     <section id="product" class="max-w-6xl mx-auto px-6 py-16 md:py-28 border-t border-brand-border/60 fade-in-section">
       <!-- Section Title -->
       <div class="text-center mb-12 md:mb-20">
-        <span class="text-xs md:text-sm font-light tracking-widest uppercase text-brand-muted block mb-3">
+        <span class="text-xs md:text-sm font-medium tracking-widest uppercase text-brand-muted block mb-3">
           PORTFOLIO
         </span>
-        <h3 class="text-2xl md:text-3xl font-serif tracking-luxury uppercase text-brand-dark">
+        <h3 class="text-2xl md:text-3xl font-semibold tracking-luxury uppercase text-brand-dark">
           OUR PRODUCT
         </h3>
       </div>
@@ -186,46 +189,46 @@
         <!-- Right: Product Information -->
         <div class="flex flex-col justify-center text-center md:text-left space-y-6 md:space-y-8 md:pl-4">
           <div>
-            <span class="text-xs font-light tracking-widest text-brand-lightmuted uppercase block mb-2">
+            <span class="text-xs font-medium tracking-widest text-brand-lightmuted uppercase block mb-2">
               Signature Serum · 50mL / 1.69 fl. oz.
             </span>
-            <h4 class="text-2xl md:text-3xl font-serif font-medium text-brand-dark tracking-wide">
+            <h4 class="text-2xl md:text-3xl font-semibold text-brand-dark tracking-tight">
               Whispering Hydration Serum
             </h4>
-            <p class="text-sm font-serif italic text-brand-muted mt-1">위스퍼링 하이드레이션 세럼</p>
+            <p class="text-sm font-medium text-brand-muted mt-1">위스퍼링 하이드레이션 세럼</p>
           </div>
 
           <!-- Highlight Copy -->
           <div class="border-l-0 md:border-l-2 md:border-brand-dark/20 md:pl-4 py-1">
-            <p class="text-base md:text-lg font-serif leading-relaxed text-brand-charcoal font-normal">
+            <p class="text-base md:text-lg leading-relaxed text-brand-charcoal font-medium">
               가볍게 스며들어,<br>
               촉촉함은 오래도록.
             </p>
           </div>
 
           <!-- Description -->
-          <p class="text-brand-muted text-sm md:text-base leading-relaxed font-light">
+          <p class="text-brand-muted text-sm md:text-base leading-relaxed font-normal">
             PDRN과 5중 히알루론산, 세라마이드 NP를 담아<br class="hidden sm:inline">
             피부에 수분을 공급하고 편안한 보습 케어를 선사합니다.
           </p>
 
           <!-- Key Formula Features -->
-          <div class="grid grid-cols-2 gap-3 pt-2 text-xs text-brand-charcoal font-light text-left">
+          <div class="grid grid-cols-2 gap-3 pt-2 text-xs text-brand-charcoal font-normal text-left">
             <div class="p-3 bg-brand-sand/60 rounded-sm border border-brand-border/30">
-              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase">Active Key</span>
-              <span class="font-medium text-brand-dark">PDRN 1,000ppm</span>
+              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase font-medium">Active Key</span>
+              <span class="font-semibold text-brand-dark">PDRN 1,000ppm</span>
             </div>
             <div class="p-3 bg-brand-sand/60 rounded-sm border border-brand-border/30">
-              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase">Moisture Barrier</span>
-              <span class="font-medium text-brand-dark">5종 히알루론산 + 세라마이드</span>
+              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase font-medium">Moisture Barrier</span>
+              <span class="font-semibold text-brand-dark">5종 히알루론산 + 세라마이드</span>
             </div>
             <div class="p-3 bg-brand-sand/60 rounded-sm border border-brand-border/30">
-              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase">Pure Formula</span>
-              <span class="font-medium text-brand-dark">100% 무향료 · 비자극</span>
+              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase font-medium">Pure Formula</span>
+              <span class="font-semibold text-brand-dark">100% 무향료 · 비자극</span>
             </div>
             <div class="p-3 bg-brand-sand/60 rounded-sm border border-brand-border/30">
-              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase">Skin Type</span>
-              <span class="font-medium text-brand-dark">모든 피부 · 민감성 적합</span>
+              <span class="block text-brand-lightmuted mb-0.5 text-[10px] tracking-wider uppercase font-medium">Skin Type</span>
+              <span class="font-semibold text-brand-dark">모든 피부 · 민감성 적합</span>
             </div>
           </div>
 
@@ -234,7 +237,7 @@
             <button 
               type="button" 
               onclick="openProductModal()"
-              class="inline-block w-full sm:w-auto px-10 py-4 bg-brand-dark text-white text-xs tracking-widest uppercase hover:bg-brand-charcoal transition-all duration-300 shadow-sm"
+              class="inline-block w-full sm:w-auto px-10 py-4 bg-brand-dark text-white text-xs tracking-widest uppercase hover:bg-brand-charcoal transition-all duration-300 shadow-sm font-medium"
             >
               DISCOVER MORE
             </button>
@@ -247,13 +250,13 @@
     <!-- ==================== 4. BRAND STORY & TEXTURE ==================== -->
     <section class="max-w-6xl mx-auto px-6 py-16 md:py-28 border-t border-brand-border/60 fade-in-section">
       <div class="max-w-3xl mx-auto text-center mb-16">
-        <span class="text-xs md:text-sm font-light tracking-widest uppercase text-brand-muted block mb-3">
+        <span class="text-xs md:text-sm font-medium tracking-widest uppercase text-brand-muted block mb-3">
           INGREDIENTS & CRAFT
         </span>
-        <h3 class="text-2xl md:text-3xl font-serif tracking-luxury text-brand-dark">
+        <h3 class="text-2xl md:text-3xl font-semibold tracking-luxury text-brand-dark">
           투명하고 순수한 포뮬러
         </h3>
-        <p class="text-brand-muted text-sm md:text-base mt-4 font-light leading-relaxed">
+        <p class="text-brand-muted text-sm md:text-base mt-4 font-normal leading-relaxed">
           화려한 수식어를 덜어내고, 피부가 진정으로 편안함을 느끼는 핵심 성분만을 엄선했습니다.
         </p>
       </div>
@@ -269,8 +272,8 @@
             >
           </div>
           <div class="pt-2">
-            <h4 class="font-serif text-lg text-brand-dark font-medium">01. 0% Artificial Fragrance</h4>
-            <p class="text-xs md:text-sm text-brand-muted font-light mt-1 leading-relaxed">
+            <h4 class="text-lg text-brand-dark font-semibold">01. 0% Artificial Fragrance</h4>
+            <p class="text-xs md:text-sm text-brand-muted font-normal mt-1 leading-relaxed">
               인공 향료와 에센셜 오일을 완전히 배제하여 민감한 피부도 매일 자극 없이 온전히 안심하고 사용할 수 있습니다.
             </p>
           </div>
@@ -285,8 +288,8 @@
             >
           </div>
           <div class="pt-2">
-            <h4 class="font-serif text-lg text-brand-dark font-medium">02. Deep Hydration & Density</h4>
-            <p class="text-xs md:text-sm text-brand-muted font-light mt-1 leading-relaxed">
+            <h4 class="text-lg text-brand-dark font-semibold">02. Deep Hydration & Density</h4>
+            <p class="text-xs md:text-sm text-brand-muted font-normal mt-1 leading-relaxed">
               분자량이 다른 5종 히알루론산이 피부 층층이 촘촘하게 수분을 채우고, 세라마이드 NP가 탄탄한 보습막을 형성합니다.
             </p>
           </div>
@@ -297,13 +300,13 @@
     <!-- ==================== 5. CAMPAIGN BANNER ==================== -->
     <section class="w-full bg-brand-sand py-20 md:py-32 border-t border-b border-brand-border/50 text-center fade-in-section">
       <div class="max-w-2xl mx-auto px-6 space-y-6">
-        <span class="text-xs tracking-widest text-brand-muted uppercase block">
+        <span class="text-xs tracking-widest text-brand-muted uppercase block font-medium">
           DAILY SKIN RITUAL
         </span>
-        <blockquote class="text-2xl md:text-3xl font-serif text-brand-dark leading-relaxed font-light">
+        <blockquote class="text-2xl md:text-3xl font-medium text-brand-dark leading-relaxed">
           “피부가 숨을 쉬듯 편안해지는 순간,<br>샤로로앙이 함께합니다.”
         </blockquote>
-        <p class="text-xs md:text-sm text-brand-muted font-light tracking-wide">
+        <p class="text-xs md:text-sm text-brand-muted font-normal tracking-wide">
           Whispering Hydration Serum with Pure PDRN
         </p>
       </div>
@@ -312,7 +315,7 @@
   </main>
 
   <!-- ==================== FOOTER (DEEPONDE STYLE EXACT LAYOUT) ==================== -->
-  <footer id="contact" class="max-w-6xl mx-auto px-6 py-16 md:py-24 text-left text-xs text-brand-muted border-t border-brand-border/40">
+  <footer id="contact" class="max-w-6xl mx-auto px-6 py-16 md:py-24 text-left text-xs text-brand-muted border-t border-brand-border/40 font-normal">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 mb-12">
       <!-- Col 1: Brand Info & Official Logo -->
       <div class="md:col-span-2 space-y-4">
@@ -323,7 +326,7 @@
             class="h-5 md:h-6 w-auto object-contain"
           >
         </a>
-        <p class="text-brand-muted font-light leading-relaxed max-w-sm">
+        <p class="text-brand-muted font-normal leading-relaxed max-w-sm">
           불필요한 것은 덜어내고, 피부에 필요한 것만 남깁니다.<br>
           무향료 미니멀 스킨케어 브랜드 샤로로앙 (SHAROROANE).
         </p>
@@ -331,8 +334,8 @@
 
       <!-- Col 2: Navigation -->
       <div class="space-y-2">
-        <span class="text-brand-dark font-medium tracking-wider uppercase block mb-3">Navigation</span>
-        <ul class="space-y-2 font-light">
+        <span class="text-brand-dark font-semibold tracking-wider uppercase block mb-3">Navigation</span>
+        <ul class="space-y-2 font-normal">
           <li><a href="#home" class="hover:text-brand-dark transition-colors">Home</a></li>
           <li><a href="#philosophy" class="hover:text-brand-dark transition-colors">Our Philosophy</a></li>
           <li><a href="#product" class="hover:text-brand-dark transition-colors">Product Lineup</a></li>
@@ -341,8 +344,8 @@
 
       <!-- Col 3: Customer Service Hours -->
       <div class="space-y-2">
-        <span class="text-brand-dark font-medium tracking-wider uppercase block mb-3">Customer Service</span>
-        <p class="font-light leading-relaxed">
+        <span class="text-brand-dark font-semibold tracking-wider uppercase block mb-3">Customer Service</span>
+        <p class="font-normal leading-relaxed">
           Tel. <a href="tel:070-8144-5844" class="hover:text-brand-dark">070-8144-5844</a><br>
           Email. <a href="mailto:guigui@mondeflow.com" class="hover:text-brand-dark underline decoration-brand-border">guigui@mondeflow.com</a><br>
           CS Hours. 평일 10:00 - 17:00<br>
@@ -352,15 +355,15 @@
     </div>
 
     <!-- Deeponde Exact Corporate & FTC Information Area -->
-    <div class="pt-8 border-t border-brand-border/40 space-y-2 text-[11px] leading-relaxed text-brand-muted font-light">
-      <div>Company. <span class="text-brand-charcoal font-normal">몽드플로 (Mondeflow)</span> &nbsp;|&nbsp; CEO. <span class="text-brand-charcoal font-normal">윤우섭</span></div>
-      <div>Business Registration No. <span class="text-brand-charcoal font-normal">164-24-01987</span></div>
+    <div class="pt-8 border-t border-brand-border/40 space-y-2 text-[11px] leading-relaxed text-brand-muted font-normal">
+      <div>Company. <span class="text-brand-charcoal font-medium">몽드플로 (Mondeflow)</span> &nbsp;|&nbsp; CEO. <span class="text-brand-charcoal font-medium">윤우섭</span></div>
+      <div>Business Registration No. <span class="text-brand-charcoal font-medium">164-24-01987</span></div>
       <div>
-        E-commerce Permit Registration No. <span class="text-brand-charcoal font-normal">2026-충북청주-2450</span> 
+        E-commerce Permit Registration No. <span class="text-brand-charcoal font-medium">2026-충북청주-2450</span> 
         <a 
           href="#none" 
           onclick="window.open('https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1642401987', 'bizCommPop', 'width=750, height=950, scrollbars=yes'); return false;" 
-          class="underline hover:text-brand-dark text-brand-charcoal font-normal ml-1"
+          class="underline hover:text-brand-dark text-brand-charcoal font-medium ml-1"
         >
           [사업자정보확인]
         </a>
@@ -370,7 +373,7 @@
     </div>
 
     <!-- Copyright -->
-    <div class="pt-6 mt-4 flex flex-col md:flex-row justify-between items-center text-brand-lightmuted font-light text-[11px] space-y-3 md:space-y-0">
+    <div class="pt-6 mt-4 flex flex-col md:flex-row justify-between items-center text-brand-lightmuted font-normal text-[11px] space-y-3 md:space-y-0">
       <p>© 2026 몽드플로 (SHAROROANE). All rights reserved.</p>
       <div class="space-x-4">
         <a href="https://www.instagram.com" target="_blank" rel="noopener" class="hover:text-brand-dark transition-colors">Instagram</a>
@@ -405,28 +408,28 @@
           >
         </div>
 
-        <div class="space-y-5 text-left">
+        <div class="space-y-5 text-left font-normal">
           <div>
-            <span class="text-xs text-brand-lightmuted uppercase tracking-widest block mb-1">Detailed Specifications</span>
-            <h4 class="text-2xl font-serif text-brand-dark">Whispering Hydration Serum</h4>
-            <p class="text-xs text-brand-muted mt-1 font-serif italic">용량: 50mL / 1.69 fl. oz.</p>
+            <span class="text-xs text-brand-lightmuted uppercase tracking-widest block mb-1 font-medium">Detailed Specifications</span>
+            <h4 class="text-2xl font-semibold text-brand-dark tracking-tight">Whispering Hydration Serum</h4>
+            <p class="text-xs text-brand-muted mt-1 font-medium">용량: 50mL / 1.69 fl. oz.</p>
           </div>
 
-          <div class="space-y-3 text-xs leading-relaxed text-brand-muted font-light">
-            <p class="font-normal text-brand-dark">
+          <div class="space-y-3 text-xs leading-relaxed text-brand-muted">
+            <p class="font-semibold text-brand-dark">
               [전성분 처방 철학]
             </p>
             <p>
               정제수, 부틸렌글라이콜, 글리세린, 소듐디엔에이(PDRN 1,000ppm), 세라마이드엔피, 5종 소듐하이알루로네이트, 1,2-헥산다이올, 알란토인, 판테놀, 베타인, 카보머, 알지닌.
             </p>
             <div class="p-3 bg-brand-sand/60 rounded-sm border border-brand-border/40 space-y-1">
-              <span class="font-medium text-brand-dark block text-[11px]">체크포인트:</span>
+              <span class="font-semibold text-brand-dark block text-[11px]">체크포인트:</span>
               <p class="text-[11px]">✓ 인공향료 0% / 에센셜오일 0%</p>
               <p class="text-[11px]">✓ 피부 저자극 테스트 완료 (0.00 비자극 판정)</p>
               <p class="text-[11px]">✓ 전성분 EWG 올그린 안심 포뮬러</p>
             </div>
             <div>
-              <span class="font-medium text-brand-dark block mb-1 text-[11px]">사용 방법:</span>
+              <span class="font-semibold text-brand-dark block mb-1 text-[11px]">사용 방법:</span>
               <p class="text-[11px]">
                 토너로 피부 결을 정돈한 후, 스포이드로 2~3방울을 취해 얼굴 전체에 부드럽게 펴 바르고 가볍게 두드려 흡수시켜 줍니다.
               </p>
@@ -437,7 +440,7 @@
             <button 
               type="button" 
               onclick="closeProductModal()"
-              class="w-full py-3 bg-brand-dark text-white text-xs tracking-widest uppercase hover:bg-brand-charcoal transition-colors"
+              class="w-full py-3 bg-brand-dark text-white text-xs tracking-widest uppercase hover:bg-brand-charcoal transition-colors font-medium"
             >
               닫기
             </button>
