@@ -122,13 +122,13 @@
 
   <main id="home">
     
-    <!-- ==================== 1. HERO SECTION (FULL-WIDTH WIDE BANNER) ==================== -->
-    <section class="w-full overflow-hidden bg-brand-sand/30 border-b border-brand-border/50">
-      <div class="w-full max-w-[2000px] mx-auto">
+    <!-- ==================== 1. HERO SECTION (SLIM FULL-WIDTH WIDE BANNER) ==================== -->
+    <section class="w-full overflow-hidden border-b border-brand-border/40" style="background: linear-gradient(90deg, #E2E2E2 0%, #D6D6D6 50%, #C4C4C4 100%);">
+      <div class="w-full max-w-[2000px] mx-auto flex justify-center items-center">
         <img 
           src="assets/images/hero-package.jpg" 
           alt="샤로로앙 위스퍼링 하이드레이션 세럼 패키지" 
-          class="w-full h-auto object-cover object-center max-h-[85vh] min-h-[380px] sm:min-h-[500px] mx-auto transition-transform duration-1000 hover:scale-[1.01]"
+          class="w-full h-[360px] sm:h-[440px] md:h-[520px] lg:h-[560px] object-contain object-center mx-auto transition-transform duration-1000 hover:scale-[1.01]"
         >
       </div>
     </section>
@@ -177,12 +177,12 @@
       <!-- 2-Column Grid (왼쪽: 세럼 사진 / 오른쪽: 제품명과 소개 문구) -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center max-w-5xl mx-auto">
         
-        <!-- Left: Product Image -->
-        <div class="flex justify-center items-center bg-brand-sand/50 rounded-sm p-6 sm:p-10 border border-brand-border/40 img-zoom-container">
+        <!-- Left: Product Image (배경 박스 없이 순수 제품 사진만 자연스럽게 배치) -->
+        <div class="flex justify-center items-center img-zoom-container">
           <img 
-            src="assets/images/product-serum-drop.png" 
-            alt="샤로로앙 위스퍼링 하이드레이션 세럼 단품 컷" 
-            class="max-h-[460px] md:max-h-[520px] w-auto object-contain img-zoom drop-shadow-sm"
+            src="assets/images/product-serum-8p.jpg" 
+            alt="샤로로앙 위스퍼링 하이드레이션 세럼 연출 컷" 
+            class="max-h-[460px] md:max-h-[520px] w-auto object-contain img-zoom rounded-sm"
           >
         </div>
 
@@ -389,11 +389,11 @@
 
       <!-- Modal Content -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-2">
-        <div class="bg-brand-sand/50 rounded-sm p-6 border border-brand-border/30 flex justify-center items-center">
+        <div class="rounded-sm flex justify-center items-center">
           <img 
-            src="assets/images/product-serum-drop.png" 
+            src="assets/images/product-serum-8p.jpg" 
             alt="샤로로앙 세럼 상세 이미지" 
-            class="max-h-[360px] w-auto object-contain"
+            class="max-h-[360px] w-auto object-contain rounded-sm"
           >
         </div>
 
